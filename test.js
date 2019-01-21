@@ -40,13 +40,13 @@ let arr = [1, 2, 3, 4, 5];
 //Your Code
 
 async function getResult(n){
-     doubleMe(n,  await function test(x) {
+     doubleMe(n,  await function (x) {
         console.log('result is ', x); 
     });
 }
 async function processArray(array){
        for(const n of array){
-           await  getResult(n)
+            await getResult(n)
        }
 }
 processArray(arr);
