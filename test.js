@@ -38,23 +38,6 @@ let {doubleMe} = require('./lib');
 
 let arr = [1, 2, 3, 4, 5];
 //Your Code
-/* 
-function getResult(n){
-    return new Promise(resolve =>{
-        doubleMe(n,function (x) {
-           resolve(x); 
-        });
-    })
-}
-
-function processArray(array) {
-  array.forEach( (n) => {
-         getResult(n).then(function (res){
-        console.log('result is ',res)    
-      }
-    );
-  })
-} */
 
 function getResult(n){
     return new Promise(resolve =>{
