@@ -39,7 +39,7 @@ let {doubleMe} = require('./lib');
 let arr = [1, 2, 3, 4, 5];
 //Your Code
 
-// promise function
+// Async function
 function arrayProcess(array) {
     return new Promise(resolve => {
         array.forEach(n => {
@@ -47,7 +47,7 @@ function arrayProcess(array) {
         });
     });
 }
-// wait for promise
+// Wait for promise
 arrayProcess(arr).then((n) => {
     doubleMe(n, (x) => {
         arr.forEach((nth) => {
