@@ -41,19 +41,19 @@ let arr = [1, 2, 3, 4, 5];
 
 // promise function
 function arrayProcess(array) {
-    return new Promise(resolve =>{
+    return new Promise(resolve => {
         array.forEach(n => {
-           resolve(n)
-        })
-    })
+           resolve(n);
+        });
+    });
 }
 // wait for promise
-arrayProcess(arr).then((n)=>{
-    doubleMe(n,(x)=>{
+arrayProcess(arr).then((n) => {
+    doubleMe(n, (x) => {
         arr.forEach((nth) => {
-            let res = nth * x
-            console.log("result is", res)
-        })
-    })
+            let res = nth * x;
+            console.log("result is", res);
+        });
+    });
 }) 
  
